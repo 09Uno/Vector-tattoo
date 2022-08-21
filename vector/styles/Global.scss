@@ -1,4 +1,26 @@
+
+@import "~bootstrap/scss/bootstrap";
+
 body{
   margin: 0;
   background-color: #121315;
+
+}
+
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  border-bottom: 3px solid rgb(145, 101, 24);
+  text-decoration: none;
+  background-color: none !important;
+  color: #fff !important;
+}
+.nav-tabs{
+       --bs-nav-tabs-border-width:none !important;
+}
+.nav-tabs .nav-link.active{
+  background: none !important;
+}
+.nav-link{
+  color: #fff !important;
+  font-weight: 400 !important;
 }

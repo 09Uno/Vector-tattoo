@@ -6,6 +6,8 @@ import logo from '../img/as.png'
 import Head from "next/head";
 import { FaFacebookMessenger, FaInstagram, FaFacebookF } from 'react-icons/fa';
 import Link from "next/link";
+import NavTab from "../components/natTab";
+
 
 
 
@@ -19,7 +21,10 @@ export default function Home() {
         <>
 
             <Head>
-                Vector Tattoo
+                <title>
+                    Vector Tattoo
+                </title>
+                <link rel="icon" href="../../public/sdss.png" />
             </Head>
             <div className={styles.main}>
                 <header className={styles.header}>
@@ -71,11 +76,54 @@ export default function Home() {
                             <p>lorem, vitae facilisis ante rhoncus et. In in t netus et malesuada famelit,. Aenean tortor ante, ullamcorper pretium scelerisque vitae, condime</p>
                             <p>bitant morbi tristique senectus etles metus ur ullamcorper id. Donec hendrerit quis elit eu molcidunt. Fusce rhoncus justo</p>
                         </div>
-                        <div className={styles.work}>
-                            
-                        </div>
+                    </div>
+                    <div className={styles.work}>
+                        <h2>PORTFÓLIO</h2>
+                        <nav className={styles.navPortifolio}>
+                            <NavTab />
+                            <span className={styles.bontaoCtt}>
+                                <Link href={"a"}>FAÇA SEU ORÇAMENTO</Link>
+                            </span>
+
+                        </nav>
+
+
 
                     </div>
+
+                    <div className={styles.depoimentos}>
+                        <h2>DEPOIMENTOS</h2>
+                        <div className={styles.depoimentosImg}>
+                            <div className={styles.depoimentosBox}></div>
+                            <div className={styles.depoimentosBox}></div>
+                            <div className={styles.depoimentosBox}></div>
+                            <div className={styles.depoimentosBox}></div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -83,8 +131,12 @@ export default function Home() {
 
 
 
-
             </div>
+
+
+
+
+
 
         </>
     )

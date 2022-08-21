@@ -1,51 +1,21 @@
-ul {
-    cursor: pointer;
 
-
-    .todasli {
-        display: block;
-    }
-
-    .Minimialistali {
-        display: block;
-
-    }
-
-    .Oldli {
-        display: block;
-
-    }
-
-    .Classicasli {
-        display: block;
-
-    }
-
-
-
-    .todasli:active {
-        display: flex;
-    }
-
-
-}
 
 .Images {
     display: hidden;
     position: relative;
     display: flex;
     flex-direction: row;
+    margin-top: 50px;
 
     .mainImage {
-        background-color: black;
-        height: 540px;
+        background-color: rgb(199, 176, 176);
+        height: 520px;
         width: 700px;
        
         margin-right: 20px;
     }
 
     .secondImage {
-        background-color: rgb(62, 27, 27);
         height: 540px;
         width: 700px;
         margin-right: 50px;
@@ -60,6 +30,9 @@ ul {
         .smallImg {
             background-color: antiquewhite;
             margin: 10px;
+            margin-bottom: 20px;
+
+            margin-top: 0;
             height: 250px;
             width: 250px;
             display: flex;
